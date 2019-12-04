@@ -47,7 +47,7 @@ const StartGameScreen = props => {
                 <Text>You selected</Text>
                 {/* jika tag nya seperti dibawah ini, maka selectedNumber bisa dipanggil di NumberContainer dengan props.children */}
                 <NumberContainer>{selectedNumber}</NumberContainer>
-                <Button title="START GAME" />
+                <Button title="START GAME" onPress={() => props.onStartGame(selectedNumber)} />
             </Card>
         );
     };
