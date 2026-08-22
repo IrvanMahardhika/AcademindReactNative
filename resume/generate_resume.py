@@ -96,8 +96,14 @@ def build_resume(output_path: str) -> None:
         ("Frontend", "React.js, Vue.js, Next.js, React Native, Expo, Angular, HTML, CSS"),
         ("Backend", "NestJS, Node.js, Express.js, Django REST Framework, GraphQL, REST APIs"),
         ("Databases", "PostgreSQL, MySQL, Redis, DynamoDB, MongoDB (NoSQL)"),
-        ("Cloud & DevOps", "AWS (S3, EC2, ECS, ECR, ELB, Lambda, API Gateway, RDS, CloudFront), Docker, Kubernetes, GCP"),
-        ("Tools & Practices", "Git, CI/CD, BullMQ, TypeORM, Shopify (OAuth, GraphQL), OpenCV, PaddleOCR, Agile, Code Review"),
+        (
+            "Cloud & DevOps",
+            "AWS (S3, EC2, ECS, Lambda, API Gateway, RDS, CloudFront), Docker, Kubernetes, GCP",
+        ),
+        (
+            "Tools & Practices",
+            "Git, CI/CD, BullMQ, TypeORM, Shopify, OpenCV, PaddleOCR, Agile, Code Review",
+        ),
     ]
     for label, value in skills:
         pdf.set_x(pdf.l_margin)
