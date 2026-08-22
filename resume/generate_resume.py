@@ -101,12 +101,9 @@ def build_resume(output_path: str) -> None:
     ]
     for label, value in skills:
         pdf.set_x(pdf.l_margin)
-        pdf.set_font("Helvetica", "B", 10)
-        pdf.set_text_color(30, 30, 30)
-        pdf.write(5, f"{label}: ")
         pdf.set_font("Helvetica", "", 10)
         pdf.set_text_color(40, 40, 40)
-        pdf.multi_cell(0, 5, value)
+        pdf.multi_cell(0, 5, f"{label}: {value}")
         pdf.ln(0.5)
 
     # Experience
