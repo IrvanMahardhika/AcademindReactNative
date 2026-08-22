@@ -68,11 +68,15 @@ def build_resume(output_path: str) -> None:
 
     pdf.set_font("Helvetica", "", 9.5)
     pdf.set_text_color(50, 50, 50)
-    contact = (
-        "Bogor, Indonesia  |  +62 812-1039-4457  |  irvan.mahardhika@gmail.com  |  "
-        "linkedin.com/in/irvan-mahardhika-setyawan"
+    contact_line_1 = (
+        "Bogor, Indonesia  |  +62 812-1039-4457  |  irvan.mahardhika@gmail.com"
     )
-    pdf.multi_cell(0, 5, contact)
+    contact_line_2 = (
+        "https://www.linkedin.com/in/irvan-mahardhika/  |  https://github.com/IrvanMahardhika"
+    )
+    pdf.multi_cell(0, 5, contact_line_1)
+    pdf.set_x(pdf.l_margin)
+    pdf.multi_cell(0, 5, contact_line_2)
     pdf.ln(2)
 
     # Summary
@@ -117,7 +121,7 @@ def build_resume(output_path: str) -> None:
 
     job_header(
         pdf,
-        "Senior Full-Stack Developer",
+        "Senior Full-Stack Engineer",
         "Wayfindr",
         "Feb 2026 - Present",
         "Singapore (Full-time)",
@@ -170,7 +174,7 @@ def build_resume(output_path: str) -> None:
         "Singapore (Contract)",
     )
     for item in [
-        "Led a team of software engineers in full-stack development using React.js, React Native, Node.js Serverless, and Express.js.",
+        "Led a team of software engineers in full-stack development using React.js, React Native, AWS Lambda (serverless), and Express.js.",
         "Built an AI-powered OCR system to extract text from IDs using OpenCV and PaddleOCR, wrapped in a Django REST Framework service.",
         "Deployed and managed AWS infrastructure including S3, Lambda, API Gateway, RDS, and CloudFront.",
         "Spearheaded production support operations and resolved 50+ L3 support tickets per month.",
