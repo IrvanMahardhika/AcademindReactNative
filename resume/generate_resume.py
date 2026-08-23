@@ -194,7 +194,6 @@ def build_resume(output_path: str) -> None:
         "Spearheaded production support operations and resolved 50+ L3 support tickets per month.",
         "Led delivery of a mission-critical software project, resulting in a long-term client partnership and increased revenue.",
         "Received 2024 TVSD Spot Award for exemplary performance.",
-        "Company wound down due to financial restructuring; role ended with closure.",
     ]:
         bullet(pdf, item)
     tech_line(pdf, "Tech: React.js, React Native, Node.js, Express.js, Django REST Framework, MySQL, AWS Lambda")
