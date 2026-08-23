@@ -39,7 +39,14 @@ def tech_line(pdf: ResumePDF, text: str) -> None:
     pdf.multi_cell(0, 5, f"  {text}")
 
 
-def job_header(pdf: ResumePDF, title: str, company: str, dates: str, location: str) -> None:
+def job_header(
+    pdf: ResumePDF,
+    title: str,
+    company: str,
+    dates: str,
+    location: str,
+    note: str | None = None,
+) -> None:
     pdf.ln(1)
     pdf.set_font("Helvetica", "B", 10.5)
     pdf.set_text_color(20, 20, 20)
@@ -47,6 +54,10 @@ def job_header(pdf: ResumePDF, title: str, company: str, dates: str, location: s
     pdf.set_font("Helvetica", "", 10)
     pdf.set_text_color(60, 60, 60)
     pdf.cell(0, 5, f"{company} | {location} | {dates}", new_x="LMARGIN", new_y="NEXT")
+    if note:
+        pdf.set_font("Helvetica", "I", 9.5)
+        pdf.set_text_color(80, 80, 80)
+        pdf.cell(0, 5, note, new_x="LMARGIN", new_y="NEXT")
     pdf.ln(1)
 
 
@@ -137,12 +148,13 @@ def build_resume(output_path: str) -> None:
 
     job_header(
         pdf,
-        "Software Engineer (Freelance)",
+        "Software Engineer (Freelance, Part-time)",
         "InstaRinn",
         "Dec 2025 - Feb 2026",
         "India",
     )
     for item in [
+        "Part-time contract (~20-25 hrs/week) while transitioning after TVS Digital closure.",
         "Built an SEO-friendly Next.js web application optimized for search engine discoverability, fast load times, and seamless indexing.",
         "Developed serverless-style backends on Supabase for scalable data and authentication workflows.",
         "Delivered a React.js PWA with service workers for offline functionality and a native-like user experience.",
@@ -152,12 +164,13 @@ def build_resume(output_path: str) -> None:
 
     job_header(
         pdf,
-        "Software Engineer (Freelance)",
+        "Software Engineer (Freelance, Part-time)",
         "Cloudetica Solutions",
         "Sep 2025 - Jan 2026",
         "Indonesia",
     )
     for item in [
+        "Part-time contract (~20-25 hrs/week) while transitioning after TVS Digital closure.",
         "Developed a PWA using React Native and Expo, integrated with a NestJS backend supporting 1K+ users and 50K+ requests per day.",
         "Built interactive web applications using React.js for client-facing product features.",
         "Deployed and managed cloud infrastructure on AWS including S3, EC2, ECR, ECS, ELB, DynamoDB, RDS, and CloudFront.",
@@ -172,6 +185,7 @@ def build_resume(output_path: str) -> None:
         "TVS Digital",
         "Oct 2023 - Oct 2025",
         "Singapore (Contract)",
+        note="(Company ceased operations, Oct 2025)",
     )
     for item in [
         "Led a team of 3 software engineers in full-stack development using React.js, React Native, AWS Lambda (serverless), and Express.js.",
@@ -180,6 +194,7 @@ def build_resume(output_path: str) -> None:
         "Spearheaded production support operations and resolved 50+ L3 support tickets per month.",
         "Led delivery of a mission-critical software project, resulting in a long-term client partnership and increased revenue.",
         "Received 2024 TVSD Spot Award for exemplary performance.",
+        "Company wound down due to financial restructuring; role ended with closure.",
     ]:
         bullet(pdf, item)
     tech_line(pdf, "Tech: React.js, React Native, Node.js, Express.js, Django REST Framework, MySQL, AWS Lambda")
