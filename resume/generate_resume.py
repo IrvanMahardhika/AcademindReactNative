@@ -232,6 +232,17 @@ def build_resume(output_path: str) -> None:
         bullet(pdf, item)
     tech_line(pdf, "Tech: React.js, React Native, Node.js, Express.js, MySQL")
 
+    # Prior Experience
+    section_title(pdf, "Prior Experience")
+    pdf.set_x(pdf.l_margin)
+    pdf.set_font("Helvetica", "", 10)
+    pdf.set_text_color(40, 40, 40)
+    pdf.multi_cell(
+        0,
+        5,
+        "Retail Employee | Superindo, Ace Hardware, Central Retail | 2005 - 2019",
+    )
+
     # Education
     section_title(pdf, "Education")
     pdf.set_font("Helvetica", "B", 10)
