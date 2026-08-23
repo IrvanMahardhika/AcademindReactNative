@@ -207,8 +207,7 @@ def build_resume(output_path: str) -> None:
         "Indonesia (Contract)",
     )
     for item in [
-        "Directed a team of software engineers in frontend development using React Native and Angular.",
-        "Published and maintained applications on Apple App Store and Google Play Store.",
+        "Directed a team of 2 software engineers in frontend development using React Native and Angular, shipping applications to Apple App Store and Google Play Store.",
         "Conducted code reviews and upheld engineering best practices across the mobile codebase.",
     ]:
         bullet(pdf, item)
