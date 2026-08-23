@@ -158,7 +158,7 @@ def build_resume(output_path: str) -> None:
         "Indonesia",
     )
     for item in [
-        "Developed a PWA using React Native and Expo, integrated with a scalable NestJS backend.",
+        "Developed a PWA using React Native and Expo, integrated with a NestJS backend supporting 1K+ users and 50K+ requests per day.",
         "Built interactive web applications using React.js for client-facing product features.",
         "Deployed and managed cloud infrastructure on AWS including S3, EC2, ECR, ECS, ELB, DynamoDB, RDS, and CloudFront.",
         "Conducted thorough code reviews to maintain code quality and team standards.",
@@ -174,7 +174,7 @@ def build_resume(output_path: str) -> None:
         "Singapore (Contract)",
     )
     for item in [
-        "Led a team of software engineers in full-stack development using React.js, React Native, AWS Lambda (serverless), and Express.js.",
+        "Led a team of 3 software engineers in full-stack development using React.js, React Native, AWS Lambda (serverless), and Express.js.",
         "Built an AI-powered OCR system to extract text from IDs using OpenCV and PaddleOCR, wrapped in a Django REST Framework service.",
         "Deployed and managed AWS infrastructure including S3, Lambda, API Gateway, RDS, and CloudFront.",
         "Spearheaded production support operations and resolved 50+ L3 support tickets per month.",
