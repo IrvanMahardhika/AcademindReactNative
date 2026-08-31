@@ -2,7 +2,7 @@
 
 **Partnerships | Account Management | Business Growth**
 
-Bogor, Indonesia | +62 856-9798-6230 | destryayulestari@gmail.com | linkedin.com/in/destryayulestari
+Bogor, Indonesia | +62 856-9798-6230 | destryayulestari@gmail.com | https://www.linkedin.com/in/destry-ayu-l-0a17b0172
 
 ---
 
