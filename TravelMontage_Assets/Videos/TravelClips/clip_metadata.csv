@@ -1,0 +1,7 @@
+filename,resolution,aspect_ratio,time_of_day,location,background_noise
+clip1.mp4,3840x2160,16:9,day,Hayters Gap,no
+clip2.mp4,1920x1080,16:9,day,Okanagan Shore,yes
+clip3.mp4,1080x1920,9:16,day,Running Creek,no
+clip4.mp4,1280x720,16:9,day,Sugarloaf Beach,yes
+clip5.mp4,480x360,4:3,night,Lofoten Ridge,no
+clip6.mp4,720x1280,9:16,night,Polar Overlook,yes

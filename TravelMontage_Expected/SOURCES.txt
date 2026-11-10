@@ -1,0 +1,29 @@
+clip1.mp4
+Derived 12s 3840x2160 cut from Commons CC0 1.0
+https://commons.wikimedia.org/wiki/File:The_Channels_Natural_Area_Preserve,_Hayters_Gap_VA.webm
+Author: Mark Simcox
+
+clip2.mp4
+Derived 12s 1920x1080 cut from Commons CC0 1.0
+https://commons.wikimedia.org/wiki/File:Okanagan_Lakeshore_at_Boyce-Gyro_Beach_on_a_Winter_Afternoon.webm
+Author: Extemporalist
+
+clip3.mp4
+Derived 12s 1080x1920 center crop from Commons CC0 1.0
+https://commons.wikimedia.org/wiki/File:Running_Creek.ogv
+Author: Shiftchange
+
+clip4.mp4
+Derived 12s 1280x720 from Commons CC0 1.0
+https://commons.wikimedia.org/wiki/File:Sugarloaf_Mountain_Rio_de_Janeiro_Brazil.OGV
+Author: Fczuardi
+
+clip5.mp4 and clip6.mp4
+Derived cuts from Commons CC0 1.0 (clip5 480x360, clip6 720x1280)
+https://commons.wikimedia.org/wiki/File:Time-lapse_of_Aurora_Borealis_in_Norway.webm
+Author: Christer Olsen
+
+background_music.mp3
+Long Ambient Pad — indigo.cloud — CC0 1.0
+https://freesound.org/people/indigo.cloud/sounds/254856
+https://creativecommons.org/publicdomain/zero/1.0/
