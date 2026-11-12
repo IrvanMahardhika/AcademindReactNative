@@ -1,0 +1,25 @@
+Arm,Enrolled,Week,MeanOutcome,PhaseName,PhaseOrder
+Active 60 mg,82,0,6.2,Screening,1
+Active 60 mg,82,4,10.8,Randomization,2
+Active 60 mg,82,8,15.1,Treatment,3
+Active 60 mg,82,12,18.4,Follow-up,4
+Active 30 mg,64,0,6.0,Screening,1
+Active 30 mg,64,4,9.1,Randomization,2
+Active 30 mg,64,8,12.4,Treatment,3
+Active 30 mg,64,12,14.0,Follow-up,4
+Placebo,71,0,6.1,Screening,1
+Placebo,71,4,7.2,Randomization,2
+Placebo,71,8,8.0,Treatment,3
+Placebo,71,12,8.5,Follow-up,4
+Open-label,38,0,6.3,Screening,1
+Open-label,38,4,9.5,Randomization,2
+Open-label,38,8,11.2,Treatment,3
+Open-label,38,12,12.0,Follow-up,4
+Rescue,22,0,5.8,Screening,1
+Rescue,22,4,6.4,Randomization,2
+Rescue,22,8,7.0,Treatment,3
+Rescue,22,12,7.1,Follow-up,4
+Active 90 mg,55,0,6.4,Screening,1
+Active 90 mg,55,4,11.0,Randomization,2
+Active 90 mg,55,8,14.2,Treatment,3
+Active 90 mg,55,12,16.6,Follow-up,4
