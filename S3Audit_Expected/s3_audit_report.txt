@@ -1,0 +1,17 @@
+S3 audit report
+
+Bucket: logsarchive-prod-lab
+BlockPublicAccess: MATCH
+Versioning: MATCH
+DefaultEncryption: MATCH
+LifecycleIA: MATCH
+LifecycleGlacier: MATCH
+TagEnvironment: MATCH
+
+Bucket: workscratch-staging-lab
+BlockPublicAccess: MATCH
+Versioning: MATCH
+DefaultEncryption: MATCH
+LifecycleIA: MATCH
+LifecycleGlacier: MATCH
+TagEnvironment: MATCH
