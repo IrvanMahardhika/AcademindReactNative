@@ -1,0 +1,5 @@
+city_budget_2024.ods
+Synthetic municipal budget table created for this lab (not copied from a copyrighted publication).
+No third-party images, video, or music.
+
+City_Budget_Presentation.odp and city_budget_presentation.pdf are gold deliverables built from that table.
