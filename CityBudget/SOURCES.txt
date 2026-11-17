@@ -1,0 +1,3 @@
+city_budget_2024.ods
+Synthetic municipal budget table created for this lab (not copied from a copyrighted publication).
+No third-party images, video, or music.
