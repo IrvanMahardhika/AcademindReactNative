@@ -1,0 +1,5 @@
+engagement_survey.csv
+Synthetic 120-row employee engagement survey created for this lab (not copied from a copyrighted publication).
+No employee names or other personal data. Response IDs are fictional (R001-R120).
+Likert cells are sometimes stored as text. Recommend uses mixed case and padded spaces.
+No third-party images, video, or music.
