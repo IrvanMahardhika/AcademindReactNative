@@ -1,0 +1,3 @@
+athlete_performance.xlsx
+Synthetic fictional student-athlete scores created for this lab (not copied from a copyrighted publication).
+Names are invented. No third-party images, video, or music.
