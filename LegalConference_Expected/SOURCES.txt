@@ -1,0 +1,10 @@
+script.docx
+Synthetic conference script created for this lab (not copied from a copyrighted publication).
+
+law_firm_logo.png
+Wikimedia Commons File:Unbalanced_scales.svg
+https://commons.wikimedia.org/wiki/File:Unbalanced_scales.svg
+License: Public domain (PD-self). Rasterized to PNG for this lab.
+Not a real law-firm trademark.
+
+Data_Privacy_Law_Conference.pdf is the gold four-slide export. Speaker notes stay empty; bodies stay in the sheet.
