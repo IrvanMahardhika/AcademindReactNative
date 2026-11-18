@@ -1,0 +1,3 @@
+Inventory_Data.xlsx
+Synthetic clinic supply inventory created for this lab (not copied from a copyrighted publication).
+No patient names or other personal data. No third-party images, video, or music.
