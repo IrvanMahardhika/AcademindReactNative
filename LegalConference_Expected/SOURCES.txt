@@ -7,4 +7,4 @@ https://commons.wikimedia.org/wiki/File:Unbalanced_scales.svg
 License: Public domain (PD-self). Rasterized to PNG for this lab.
 Not a real law-firm trademark.
 
-Data_Privacy_Law_Conference.pdf is the gold notes export (four slides, no per-section clone).
+Data_Privacy_Law_Conference.pdf is the gold four-slide export. Speaker notes stay empty; bodies stay in the sheet.
