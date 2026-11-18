@@ -1,0 +1,6 @@
+engagement_survey.csv
+Synthetic 120-row employee engagement survey created for this lab (not copied from a copyrighted publication).
+No employee names or other personal data. Response IDs are fictional (R001–R120).
+No third-party images, video, or music.
+
+Engagement_Survey_Results.pdf is the gold four-slide export.
