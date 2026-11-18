@@ -1,0 +1,8 @@
+script.docx
+Synthetic conference script created for this lab (not copied from a copyrighted publication).
+
+law_firm_logo.png
+Wikimedia Commons File:Unbalanced_scales.svg
+https://commons.wikimedia.org/wiki/File:Unbalanced_scales.svg
+License: Public domain (PD-self). Rasterized to PNG for this lab.
+Not a real law-firm trademark.
