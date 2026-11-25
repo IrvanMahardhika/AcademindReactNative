@@ -1,0 +1,14 @@
+Travel Training / Destination Specialist — asset sources
+
+agency_logo.png
+  Original navy globe mark drawn for this training pack (meridians/parallels only).
+  No Wikimedia person photograph is used (PII-free). Color #1B4F72.
+
+certification_results.xlsx
+  Original synthetic scores for ten employees and five destination modules.
+  Names are fictional. No PII.
+
+Gold files (not in the source zip)
+  certification_results_GOLD.xlsx — Average / Band formulas, GradeSummary COUNTIF, navy column chart.
+  grade_distribution.png — rendered GradeSummary counts.
+  Destination_Specialist_Results.pdf — four 16:9 pages (title, grade rule, chart, one roster table).
