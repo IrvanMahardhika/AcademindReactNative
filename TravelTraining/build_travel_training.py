@@ -10,7 +10,8 @@ from openpyxl import Workbook
 from openpyxl.chart import BarChart, Reference
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.worksheet.table import Table, TableStyleInfo
-from PIL import Image, ImageDraw
+import cairosvg
+from PIL import Image
 from reportlab.lib.colors import Color, HexColor, white
 from reportlab.lib.pagesizes import landscape
 from reportlab.lib.units import cm, inch
@@ -59,23 +60,22 @@ def computed_rows():
     return out
 
 
+# Public domain schematic globe (Sarang, 2012):
+# https://commons.wikimedia.org/wiki/File:Globe_icon-white.svg
+GLOBE_SVG = """<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420">
+  <circle cx="210" cy="210" r="208" fill="#FFFFFF"/>
+  <path stroke="#1B4F72" fill="none" stroke-width="20"
+    d="M209,15a195,195 0 1,0 2,0zm1,0v390m195-195H15M59,90a260,260 0 0,0 302,0 m0,240 a260,260 0 0,0-302,0M195,20a250,250 0 0,0 0,382 m30,0 a250,250 0 0,0 0-382"/>
+</svg>
+"""
+
+
 def draw_logo(path: Path) -> None:
-    """Navy globe mark for the training agency (original raster, meridians only)."""
-    size = 512
-    im = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    d = ImageDraw.Draw(im)
-    navy = (27, 79, 114, 255)
-    pad = 28
-    d.ellipse([pad, pad, size - pad, size - pad], outline=navy, width=18)
-    d.ellipse([pad + 90, pad, size - pad - 90, size - pad], outline=navy, width=8)
-    d.ellipse([pad + 160, pad, size - pad - 160, size - pad], outline=navy, width=6)
-    cy = size // 2
-    for k in range(-2, 3):
-        y = cy + k * 70
-        d.arc([pad, y - 210, size - pad, y + 210], 200, 340, fill=navy, width=6)
-    d.line([(pad, cy), (size - pad, cy)], fill=navy, width=8)
-    d.line([(size // 2, pad), (size // 2, size - pad)], fill=navy, width=8)
-    im.save(path)
+    """Rasterize Wikimedia File:Globe_icon-white.svg (public domain) in navy."""
+    svg_path = path.with_name("Globe_icon-white.svg")
+    svg_path.write_text(GLOBE_SVG, encoding="utf-8")
+    cairosvg.svg2png(bytestring=GLOBE_SVG.encode("utf-8"), write_to=str(path), output_width=512)
 
 
 def style_header(ws, cells):
@@ -340,8 +340,12 @@ def write_sources(path: Path) -> None:
         """Travel Training / Destination Specialist — asset sources
 
 agency_logo.png
-  Original navy globe mark drawn for this training pack (meridians/parallels only).
-  No Wikimedia person photograph is used (PII-free). Color #1B4F72.
+  Derived from Wikimedia Commons File:Globe_icon-white.svg
+  https://commons.wikimedia.org/wiki/File:Globe_icon-white.svg
+  Author: Sarang (own work, 2012)
+  License: Public domain
+  Rasterized to PNG and recolored stroke #1B4F72 for the slide master.
+  No photograph of a person.
 
 certification_results.xlsx
   Original synthetic scores for ten employees and five destination modules.
@@ -383,6 +387,7 @@ def main() -> None:
         [
             (src_xlsx, "TravelTraining/certification_results.xlsx"),
             (logo, "TravelTraining/agency_logo.png"),
+            (ROOT / "Globe_icon-white.svg", "TravelTraining/Globe_icon-white.svg"),
             (sources, "TravelTraining/SOURCES.txt"),
         ],
     )

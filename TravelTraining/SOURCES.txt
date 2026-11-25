@@ -1,8 +1,12 @@
 Travel Training / Destination Specialist — asset sources
 
 agency_logo.png
-  Original navy globe mark drawn for this training pack (meridians/parallels only).
-  No Wikimedia person photograph is used (PII-free). Color #1B4F72.
+  Derived from Wikimedia Commons File:Globe_icon-white.svg
+  https://commons.wikimedia.org/wiki/File:Globe_icon-white.svg
+  Author: Sarang (own work, 2012)
+  License: Public domain
+  Rasterized to PNG and recolored stroke #1B4F72 for the slide master.
+  No photograph of a person.
 
 certification_results.xlsx
   Original synthetic scores for ten employees and five destination modules.
