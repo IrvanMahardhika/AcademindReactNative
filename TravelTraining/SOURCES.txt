@@ -5,14 +5,14 @@ agency_logo.png
   https://commons.wikimedia.org/wiki/File:Globe_icon-white.svg
   Author: Sarang (own work, 2012)
   License: Public domain
-  Rasterized to PNG and recolored stroke #1B4F72 for the slide master.
-  No photograph of a person.
+  Rasterized to PNG, stroke #1B4F72.
 
 certification_results.xlsx
-  Original synthetic scores for ten employees and five destination modules.
-  Names are fictional. No PII.
+  Original synthetic scores. Fictional names. No PII.
 
-Gold files (not in the source zip)
-  certification_results_GOLD.xlsx — Average / Band formulas, GradeSummary COUNTIF, navy column chart.
-  grade_distribution.png — rendered GradeSummary counts.
-  Destination_Specialist_Results.pdf — four 16:9 pages (title, grade rule, chart, one roster table).
+Expected (not in the source zip)
+  certification_working.xlsx — Table Scores, Average / Band formulas, Data Bars,
+    GradeSummary COUNTIF, ModuleSummary means / cohort / certification rate, two navy charts.
+  grade_distribution.png
+  module_means.png
+  Destination_Specialist_Results.pdf — five 16:9 slides.
