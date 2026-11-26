@@ -1,0 +1,14 @@
+warehouse_exterior.jpg
+  Wikimedia Commons File:Brown Warehouse Ft W IN.jpg
+  https://commons.wikimedia.org/wiki/File:Brown_Warehouse_Ft_W_IN.jpg
+  Author: Smallbones
+  License: CC0
+
+Logistics_Report_Q3.docx
+  Original synthetic hub table and Heading 1 sections. Fictional hub names. No PII.
+
+Expected
+  Logistics_Report_Q3_working.docx — saved working copy of the report
+  hub_rates.xlsx — Table Hubs, Flag, Threshold 90%, Flags KPIs, navy/red chart
+  ontime_by_hub.png
+  Q3_Logistics_Briefing.pdf — five slides with speaker notes under each slide
