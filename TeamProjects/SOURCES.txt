@@ -1,0 +1,8 @@
+Team_Projects folder tree is created by seed_team_projects.ps1 (payload.bin sizes in MiB).
+folder_priorities.xlsx lists Folder, OwnerGroup, Review_Required, Note. Fictional names. No PII.
+
+Expected
+  treesize_scan.xlsx — Folder, SizeMB, PercentOfParent after a TreeSize MB scan
+  Large_Folders_Report.xlsx — Scan, Priorities with XLOOKUP and Flag, Review FILTER-equivalent, Summary, chart
+  folder_sizes.png
+  Large_Folders_Briefing.pdf — four 16:9 slides
