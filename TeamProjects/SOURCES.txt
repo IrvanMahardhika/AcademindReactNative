@@ -1,5 +1,7 @@
-Team_Projects folder tree is created by seed_team_projects.ps1 (payload.bin sizes in MiB).
+Team_Projects/<name>/payload.bin sizes (MiB): AtlasCore 48, BeaconDocs 12.5, CedarMedia 36,
+DriftLogs 8, EmberData 64, FalconLegal 15, HarborML 22, IrisWeb 10.5.
 folder_priorities.xlsx lists Folder, OwnerGroup, Review_Required, Note. Fictional names. No PII.
+seed_team_projects.ps1 recreates the payloads if unzip did not.
 
 Expected
   treesize_scan.xlsx — Folder, SizeMB, PercentOfParent after a TreeSize MB scan

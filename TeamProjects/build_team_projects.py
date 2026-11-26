@@ -331,10 +331,29 @@ def build_pdf(path: Path, chart: Path) -> None:
     c.save()
 
 
+def ensure_payloads() -> None:
+    mib = 1024 * 1024
+    chunk = b"\0" * mib
+    sizes = {f[0]: int(f[4] * mib) for f in FOLDERS}
+    for name, n in sizes.items():
+        p = ROOT / "Team_Projects" / name / "payload.bin"
+        p.parent.mkdir(parents=True, exist_ok=True)
+        if p.exists() and p.stat().st_size == n:
+            continue
+        remaining = n
+        with open(p, "wb") as fh:
+            while remaining:
+                w = min(len(chunk), remaining)
+                fh.write(chunk[:w])
+                remaining -= w
+
+
 def write_sources(path: Path) -> None:
     path.write_text(
-        """Team_Projects folder tree is created by seed_team_projects.ps1 (payload.bin sizes in MiB).
+        """Team_Projects/<name>/payload.bin sizes (MiB): AtlasCore 48, BeaconDocs 12.5, CedarMedia 36,
+DriftLogs 8, EmberData 64, FalconLegal 15, HarborML 22, IrisWeb 10.5.
 folder_priorities.xlsx lists Folder, OwnerGroup, Review_Required, Note. Fictional names. No PII.
+seed_team_projects.ps1 recreates the payloads if unzip did not.
 
 Expected
   treesize_scan.xlsx — Folder, SizeMB, PercentOfParent after a TreeSize MB scan
@@ -360,6 +379,7 @@ def main() -> None:
         d = ROOT / "Team_Projects" / name
         d.mkdir(exist_ok=True)
         (d / ".gitkeep").write_text("", encoding="utf-8")
+    ensure_payloads()
 
     pri = ROOT / "folder_priorities.xlsx"
     scan = ROOT / "treesize_scan.xlsx"
@@ -382,7 +402,8 @@ def main() -> None:
             (ROOT / "seed_team_projects.ps1", "TeamProjects/seed_team_projects.ps1"),
             (sources, "TeamProjects/SOURCES.txt"),
         ]
-        + [(ROOT / "Team_Projects" / f[0] / ".gitkeep", f"TeamProjects/Team_Projects/{f[0]}/.gitkeep") for f in FOLDERS],
+        + [(ROOT / "Team_Projects" / f[0] / ".gitkeep", f"TeamProjects/Team_Projects/{f[0]}/.gitkeep") for f in FOLDERS]
+        + [(ROOT / "Team_Projects" / f[0] / "payload.bin", f"TeamProjects/Team_Projects/{f[0]}/payload.bin") for f in FOLDERS],
     )
     zip_dir(
         REPO / "TeamProjects_Expected.zip",
