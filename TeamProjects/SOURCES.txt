@@ -1,0 +1,11 @@
+Team_Projects/<name>/payload.bin sizes (MiB): AtlasCore 48, BeaconDocs 12.5, CedarMedia 36,
+DriftLogs 8, EmberData 64, FalconLegal 15, HarborML 22, IrisWeb 10.5.
+folder_priorities.xlsx — Folder, OwnerGroup, Review_Required, Note. Fictional names. No PII.
+
+Quota is 25 MB. Archive = Review_Required Yes and SizeMB > 25. Hold = Yes and SizeMB <= 25.
+
+Expected
+  treesize_scan.xlsx — raw TreeSize-style export (full path, Size as text with MB)
+  Large_Folders_Report.xlsx — Control, cleaned Scan, XLOOKUP, Action, Review, Hold, Summary, chart
+  folder_sizes.png — SizeMB vs Quota
+  Large_Folders_Briefing.pdf — four 16:9 slides
